@@ -160,3 +160,52 @@ window.onclick = function(event) {
         }
     }
 }
+
+///
+
+const tokenAddress = '0x2af1d53393a17b548a07d8ff4cfa873044399fca';
+const tokenSymbol = 'TEAR';
+const tokenDecimals = 18;
+const tokenImage = 'https://tearcoin.xyz/images/tearcoin.png';
+
+
+
+window.addEventListener('load', function() {
+    if (window.ethereum) {
+        $(".metamask-button").addClass("show");
+    } else {
+        console.log("Non-Ethereum browser detected. You should consider installing MetaMask.");
+    }
+});
+
+
+
+async function addTokenFunction() {
+
+    if (!window.ethereum) {
+        return;
+    }
+    try {
+
+        const wasAdded = await ethereum.request({
+            method: 'wallet_watchAsset',
+            params: {
+                type: 'ERC20',
+                options: {
+                    address: tokenAddress,
+                    symbol: tokenSymbol,
+                    decimals: tokenDecimals,
+                    image: tokenImage,
+                },
+            },
+        });
+
+        if (wasAdded) {
+            console.log('Thanks for your interest!');
+        } else {
+            console.log('HelloWorld Coin has not been added');
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}

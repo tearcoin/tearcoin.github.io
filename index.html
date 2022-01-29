@@ -14,6 +14,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/favicon.ico"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10602460-15"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-10602460-15');
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -65,6 +75,8 @@
 											<span style="vertical-align:middle";>KyberSwap</span>
 										</a>										
 									</div>
+									<button onclick="addTokenFunction()" class="button primary metamask-button">Add To MetaMask</button>
+
 								</div>
 								<a id="dextools-btn" target="_blank" href="https://www.dextools.io/app/polygon/pair-explorer/0xf488ebfc73bdc8aa711a93420393cc7471f922d1"></a>
 								<a id="polygonscan-btn" target="_blank" href="https://polygonscan.com/token/0x2af1d53393a17b548a07d8ff4cfa873044399fca#balances"></a>
@@ -205,6 +217,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

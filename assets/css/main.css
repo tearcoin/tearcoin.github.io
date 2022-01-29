@@ -4159,3 +4159,13 @@ a#twitter-btn {
 .wrapper.spotlight .image img {
     border-radius: 0;
 }
+
+.metamask-button {
+    display: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.metamask-button.show {
+    display: inline;
+}
