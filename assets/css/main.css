@@ -3930,7 +3930,7 @@ div#home-buttons {
     -ms-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    margin: 0 0 6em 0;
+    margin: 0 0 9em 0;
 }
 
 a#uniswap-btn {
@@ -4000,6 +4000,19 @@ a#oneinch-btn {
 a#kyberswap-btn {
     display: inline-block;
     background: #cfbec7 url('../../images/kyberswap-logo.svg') no-repeat left;
+    background-size: 30%;
+    border-bottom: none;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-width: 160px;
+    color: black;
+}
+
+a#uniswap-btn {
+    display: inline-block;
+    background: #f13499 url('../../images/Uniswap-Icon.png') no-repeat left;
     background-size: 30%;
     border-bottom: none;
     padding-left: 50px;
